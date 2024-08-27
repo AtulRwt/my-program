@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 5px;
+            padding: 5px;
+            width:210vh;
+            height: 200vh;
+            background-color: teal;
+            border: 5px solid;
+        }
+        .box{
+            background-color: aqua;
+            height: 50px;
+            width: 190px;
+            border: 5px slateblue;
+            border-radius: 10px;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: rightmove;
+            position:relative;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: ease-out;
+            animation-direction:alternate;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            
+        }
+        @keyframes rightmove {
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left: 1250px;
+            }
+        }
+        .box2{
+            background-color: aqua;
+            height: 50px;
+            width: 190px;
+            border: 5px slateblue;
+            border-radius: 10px;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            animation: 3s  1s ease-in infinite alternate-reverse none running leftmove;
+        }
+        @keyframes leftmove {
+            from{
+                top:500px;
+                left:0px;
+            }
+            to{
+                top:500px;
+                left: 1250px;
+            }
+        }
+        .circle{
+            background-color: rgb(232, 71, 71);
+            height: 100px;
+            width: 100px;
+            border: 5px slateblue;
+            border-radius:50%;
+            margin: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            top: 180px;
+            left:40%;
+            animation:10s  ease-in-out 0s infinite alternate-reverse none running circlemove;
+        }
+        @keyframes circlemove {
+            0%{
+                top: 1%;
+                left:5%;
+            }
+            25%{
+                top: 10%;
+                left:20%;
+            }
+            50%{
+                top: 30%;
+                left:10%;
+            }
+            100%{
+                top: 40%;
+                left:35%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Hello!
+        </div>
+        <div class="box2">
+            HI!
+        </div>
+        <div class="circle">
+            Me
+        </div>
+    </div>
+</body>
+</html>

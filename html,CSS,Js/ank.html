@@ -1,0 +1,86 @@
+<html>
+    <head>
+      <script>
+        function sum()
+        {
+            let a = document.getElementById("1").value;
+            a = Number(a);
+            let b = document.getElementById("2").value;
+            b = Number(b);
+            let c = a+b;
+            document.getElementById("3").value =  c;
+        }
+        function sub()
+        {
+            let a = document.getElementById("1").value;
+            a = Number(a);
+            let b = document.getElementById("2").value;
+            b = Number(b);
+            let c = a-b;
+            document.getElementById("3").value =  c;
+        }
+        function mult()
+        {
+            let a = document.getElementById("1").value;
+            a = Number(a);
+            let b = document.getElementById("2").value;
+            b = Number(b);
+            let c = a*b;
+            document.getElementById("3").value =  c;
+        }
+        function div()
+        {
+            let a = document.getElementById("1").value;
+            a = Number(a);
+            let b = document.getElementById("2").value;
+            b = Number(b);
+            let c = a/b;
+            document.getElementById("3").value =  c;
+        }
+        function rectArea(){
+            let l=Number(document.getElementById("L").value);
+            let b=Number(document.getElementById("B").value);
+            let rectArea=l*b;
+            document.getElementById("rect").value=rectArea;
+
+        }
+        function Perimeter(){
+            let l=Number(document.getElementById("L").value);
+            let b=Number(document.getElementById("B").value);
+            let Perimeter=2*(l+b);
+            document.getElementById("rect").value=Perimeter;
+        }
+
+      
+      </script>      
+    </head>
+    <body bgcolor="#FDF5DF">
+        <table border="1">
+        <h3>Airthmatic operation</h3>
+        Number1<input type = "text" id = "1" placeholder="enter a number" required><br><br>
+        Number2<input type = "text" id = "2" placeholder="enter a number"><br><br>
+        Result : <input type = "text" id = "3" placeholder="result"><br><br>
+        <input type = "button" value = " + " onclick = "sum()">
+        <input type = "button" value = " - " onclick = "sub()">
+
+        <input type = "button" value = " x " onclick = "mult()">
+        
+        <input type = "button" value = " / " onclick = "div()">
+        <br><br>
+
+
+        <h3>Circle</h3>
+        radius<input type="number" id="radii" placeholder="enter the radius of circle"><br><br>
+        Result: <input type="number" id="result"><br><br>
+        <button value="area" onclick="circleArea()">Area</button>
+        <button value="Circumference" onclick="Circumference()">Circumference</button><br><br>
+
+        <h3>Rectangle</h3>
+        Length: <input type="number" id="L" placeholder="length of Rectangle"><br><br>
+        Breadth: <input type=" number " id="B" placeholder="enter breadth of Rectangle" ><br><br>
+        Result: <input type="number" id="rect"><br><br>
+        <button value="Area" onclick="rectArea()">Area</button>
+        <button value="Perimeter" onclick="Perimeter()">Perimeter</button>
+    </table>
+    </body>
+</html>

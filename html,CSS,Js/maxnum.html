@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <script>
+        function max(){
+            let a = Number(document.getElementById("first").value);
+            let b = Number(document.getElementById("second").value);
+            let c=a*b;
+            
+            document.getElementById("Multiple").value = c;
+        }
+    </script>
+
+    <br>
+    enter first number: <input type="number" id="first"><br><br>
+    enter second number: <input type="number" id="second"><br><br>
+    <button id="maximum" onclick="max()">X</button><br><br>
+    Multiply is: <input type="number" id="Multiple">
+
+
+</body>
+</html>

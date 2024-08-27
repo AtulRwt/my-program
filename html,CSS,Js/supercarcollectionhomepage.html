@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cars</title>
+    <style>
+      .blur-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+      }
+      .blur {
+        transition: filter 0.2s;
+      }
+      .blur:hover {
+        filter: blur(10px);
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(255, 255, 255, 0.152);
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5;
+      }
+      .blur-container:hover .text {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body align="center" background="rgb">
+    <div class="blur-container">
+      <a href="car1.html"
+        ><img
+          class="blur"
+          src="car1.jpeg"
+          alt="The supercar"
+          height="200"
+          width="350"
+      /></a>
+      <div class="text">supra</div>
+    </div>
+
+    <div class="blur-container">
+      <a href="car2.html"
+        ><img
+          class="blur"
+          src="car2.jpeg"
+          alt="The supercar"
+          height="200"
+          width="350"
+      /></a>
+      <div class="text">Mustang GT</div>
+    </div>
+
+    <div class="blur-container">
+      <a href="https://www.google.com"
+        ><img
+          class="blur"
+          src="car3.jpeg"
+          alt="The supercar"
+          height="200"
+          width="350"
+      /></a>
+      <div class="text">lamborghini</div>
+    </div>
+
+    <div class="blur-container">
+      <a href="car4.html"
+        ><img
+          class="blur"
+          src="car4.jpeg"
+          alt="The supercar"
+          height="200"
+          width="350"
+      /></a>
+      <div class="text">GTR</div>
+    </div>
+    <br />
+    <marquee
+      ><h1>
+        <font size="150">The supercar collection (NAWAB MOTORS)</font>
+      </h1></marquee
+    >
+    <video autoplay controls height="500" width="800">
+      <source
+        src="Winter Nu Chalan Nu 4 By 4 Chaidi Hai _ Uber Chalan Nu Sasti Gadi Chaidi mojugi Punjabi Funny Accent.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.</video
+    ><br />
+  </body>
+</html>

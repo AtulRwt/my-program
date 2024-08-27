@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 120px;
+            background-color: rgb(238, 238, 238);
+            border: 3px solid;
+            font-size: xx-large;
+            transition-property: all;
+            transition-duration: 100ms;
+            transition-timing-function: ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3cqmax;
+            margin: 50%;
+            color: rgb(0, 0, 0);
+            animation: 1s ease infinite alternate-reverse none running animate;
+        }
+        @keyframes animate {
+    0% {
+        background: linear-gradient(to right, #FF0000, #0000FF);
+    }
+    50% {
+        background: linear-gradient(to right, #fafaff, #FF0000);
+    }
+    100% {
+        background: linear-gradient(to right, #ffffff, #0000FF);
+    }
+}
+        .box:hover{
+            width: 159px;
+            height: 65px;
+            background-color: rgba(255, 255, 255, 0.968);
+            font-size: xxx-large;
+            
+            box-shadow: 0 0 3px 5px rgb(252, 255, 254), 0 0 3px 2px rgb(255, 255, 255), 0 0 4px 3px rgb(255, 255, 255), 0 0 4px 4px rgb(255, 255, 255);
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <a href="https://www.google.com/">
+        <div class="box">
+            Google
+        </div>
+    </a>
+</body>
+</html>

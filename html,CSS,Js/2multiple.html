@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function multiply(){
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+            let c=a*b;
+            document.getElementById("result").value=c;
+        }
+    </script>
+</head>
+<body>
+    <h2>Number multiplier</h2>
+        first number: <input type="number" id="num1" placeholder="enter first number "><br><br>
+        second number: <input type="number" id="num2" placeholder="enter second number"><br><br>
+       
+    <button value="x"  onclick="multiply()">multiply</button><br><br>
+    Result: <input type="number" id="result" ><br><br>
+     
+    
+
+</body>
+</html>

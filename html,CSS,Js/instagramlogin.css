@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    height: 100vh;
+    width: 205vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #f5f5f5;
+}
+
+.main-container{
+    border: 1px solid rgb(222, 217, 217);
+    height: 35rem;
+    width:28rem;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+   background-color: #fff;
+   align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.logo-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #f5f5f5;
+    padding: 1rem;
+    border-color: rgb(223, 223, 223);
+}
+
+
+
+.username{
+    width:16rem ;
+    height: 1.8rem;
+    font-size:10px ;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(223, 223, 223);
+    text-align: left;
+    padding-left: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.password{
+    width:16rem ;
+    height: 1.8rem;
+    font-size:10px ;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: rgb(223, 223, 223);
+    text-align: left;
+    padding-left: 8px;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.login-pass{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logo img
+{
+    padding: 20px;
+    padding-bottom: 20px;
+    height: 60px;
+    width: 200px;
+}
+
+.Log-in {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    height: 2.3rem;
+    font-size: 15px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(59, 105, 255);
+    border-radius: 8px;
+    border: none;
+    margin-top:10px ;
+}
+
+.text-with-lines {
+    position: relative;
+    text-align: center;
+    margin: 20px 0; /* Adjust margin as needed */
+    font-weight: 600;
+    font-size: small;
+    color: rgb(172, 172, 172) ;
+  }
+  
+  .text-with-lines::before,
+  .text-with-lines::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px; /* Adjust width of the lines */
+    height: .1px;
+    background-color: rgb(159, 159, 159); /* Color of the lines */
+  }
+  
+  .text-with-lines::before {
+    left: 0;
+    margin-left: -110px; /* Adjust distance of the line before the text */
+  }
+  
+  .text-with-lines::after {
+    right: 0;
+    margin-right: -110px; /* Adjust distance of the line after the text */
+  }
+  
+
+  .fb-login{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    gap: .3rem;
+}
+
+.fb-img{
+    height: .8rem;
+    width: .8rem;
+    
+}
+
+.fb-login-link a
+{
+    position: relative;
+    top: -3px;
+     
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(100, 23, 176, 0.734);
+}
+
+.forgot{
+    margin-top:.2rem;
+    
+}
+
+.forgot-link{
+    color: rgba(124, 43, 205, 0.734);
+    font-size: 12px;
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-color: rgb(223, 223, 223);
+    width: 66.8%;
+    height: 3rem;
+    font-size: 13px;
+}
+
+.appstore{
+    display: flex;
+    gap: -1rem;
+    padding-left: 1rem;
+    padding-right:1rem ;
+}
+
+.google-play-img{
+    width:90%;
+
+}
+
+.apple-play-img{
+    height: 74%;
+    width: 150px;
+}
+
+
+
+
+

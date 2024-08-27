@@ -1,0 +1,37 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "editor.fontFamily": " cursive",
+    "editor.wordWrap": "on",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "atulrawat",
+            "database": "college",
+            "username": "root",
+            "connectionTimeout": 30,
+            "password": "12345"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "atulrawat@localhost",
+            "database": "college",
+            "username": "root",
+            "password": "12345",
+            "connectionTimeout": 30
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aliceblue;
+            background-image: radial-gradient(circle farthest-corner at 10% 20%, #5c0067 0%, #00d4ff 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards{
+            width: 360px;
+            height: 640px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 10px 15px 50px 50px rgba(40, 105, 125, 0.535),30px 20px 50px 10px rebeccapurple;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            
+
+            
+        }
+        
+        .cards img{
+            width: 100%;
+            height: 32%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transition: all .3s ease-out;
+        }
+
+        .cards img:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 80%;
+            text-align: center;
+
+        }
+
+        .amountbox{
+            width: 80%;
+            height: 10%;
+            background-color: aquamarine;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right:20px ;
+            padding-left: 20px;
+             
+            animation: all 2s ease;
+        }
+
+        /* .amountbox:hover{
+            background-color: rgba(236, 235, 235, 0.275);
+             
+            color: blueviolet;
+            
+        } */
+
+        .imgbox img{
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #leftbox{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            padding-right: 13px;
+            padding-top: 12px;
+
+        }
+
+        #rightbox a{
+            text-decoration: none;
+            font-weight: 500;
+            background-color: white;
+            border: 2px solid rgb(130, 124, 121);
+            padding: 3px;
+            border-radius: 10px;
+            color: rgb(5, 5, 5);
+            transition: all .3s ease;
+        }
+
+        #rightbox a:hover{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            cursor: pointer;
+        }
+
+        #proceed{
+            width: 80%;
+            height: 9%;
+            background-color: rgb(99, 28, 165);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 1px rgba(40, 105, 125, 0.535),5px 5px 10px 1px rebeccapurple;
+            transition: all .1s ease;
+        }
+
+        #proceed:hover{
+            background-color: rgba(236, 235, 235, 0.842);
+            color: rgb(99, 28, 165);
+            cursor: pointer;
+        }
+
+        .cancel a{
+            text-decoration: none;
+            color: rgb(92, 88, 88);
+            font-weight: bolder
+        }
+
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="car2.jpeg" alt="car">
+
+            <div class="textbox">
+                <h2>
+                    Order Summary
+                </h2>
+    
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dicta ipsum eos nesciunt nam, facilis eligendi! Est quam, voluptatem voluptates exercitationem delectus a. Sint blanditiis laudantium pariatur ut quia laboriosam.
+                </p>
+            </div>
+            <div class="amountbox">
+                <div id="leftbox">
+                    <div class="imgbox">
+                        <img src="itunes.jpg" alt="music">
+                    </div>
+                    <div id="textamount">
+                        <p>Amount</p>
+                        <p>$120000.00</p>
+                    </div>
+                </div>
+                <div id="rightbox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+
+            <button id="proceed">
+                Proceed to Payment
+            </button>
+
+            <div class="cancel">
+                <a href="">
+                    Cancel Order
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

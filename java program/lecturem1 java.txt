@@ -1,0 +1,33 @@
+jdk=java development kit
+jrm=java runtime environment 
+jvm=java virtual machine
+
+1.compilation 
+	source code(.java)----------->compiler---------------->byte code(.class)	
+	---------					|
+	---------					|
+	---------			  compiler is in jdk
+
+2.execution
+
+	byte code-------->[java virtual machine]----------->native code(our language)
+
+=>components of codes
+
+1. function 
+		void main(){
+		
+		}
+2.class 
+ 		class main {
+				void main(){
+				}
+		}
+					
+
+
+
+lecture 2				
+
+
+				
