@@ -53,7 +53,7 @@
 
         // document.body.append(div);
 
-        
+        //edit and remove element
         function addLang(langName){
             const li=document.createElement('li');
             li.innerHTML= `${langName}`;
@@ -64,7 +64,26 @@
         addLang("python");
         addLang("typescript");
 
+        function addOptiLang(langName){
+            const li=document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.lang').appendChild(li);
+        } 
 
+        addOptiLang('golang');
+
+        //Edit element
+        const secLang = document.querySelector("li:nth-child(2)");
+        // secLang.innerHTML = "Mojo"
+        const newli = document.createElement('li');
+        newli.textContent ="Mojo";
+        secLang.replaceWith(newli);
+
+        const firstLang =document.querySelector("li:first-child");
+        firstLang.outerHTML = '<li>TypeScript</li>'
+
+        const lastLang=document.querySelector('li:last-child');
+        lastLang.remove();q
     </script>
 </body>
 </html>
